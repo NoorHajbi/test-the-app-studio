@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:jk="http://jalalkiswani.com/jsf"
+	xmlns:p="http://primefaces.org/ui" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:composition>
+	<h:form>
+	<p:dataTable 
+		value="#{mbPage1.modelList}" 
+		filteredValue="#{mbPage1.filterList}"
+		var="model" 
+		rowKey="#{model.id}"
+		paginator="true" 
+		paginatorAlwaysVisible="false" 
+		paginatorPosition="bottom" 
+		rows="10"
+		selectionMode="single" 
+		selection="#{mbPage1.model}"  
+		emptyMessage="" 
+		rowIndexVar="row"
+		styleClass="no-padding"
+		rendered="#{mbPage1.editTabular}" 
+		id="tblTabular">
+		<p:ajax event="rowSelect"/>
+		<p:autoUpdate />
+		<f:facet name="header">
+		    <p:commandButton action="#{mbPage1.saveAll()}" value="Save" update="@(form)"/>
+            <p:commandButton action="#{mbPage1.setEditTabular(false)}" value="Cancel" update="@(form)"/>		    
+		  </f:facet>
+		<p:column headerText="#">#{row+1}</p:column>
+		
+		    <p:column 
+			  	headerText="Field1" 
+			  	sortBy="#{model.field1}" 
+			  	filterBy="#{model.field1}" 
+			  	filterMatchMode="contains">
+
+ 
+    
+	
+	<p:inputText type="text" value="#{model.field1}" id="field1"  placeholder="Field1" disabled="false" required="false" styleClass="#{mbPage1.isFieldModified('field1')?'input-modified':''}" title="#{mbPage1.original.field1}">
+	  <p:ajax />
+	</p:inputText>
+			</p:column>	
+		    <p:column 
+			  	headerText="Field2" 
+			  	sortBy="#{model.field2}" 
+			  	filterBy="#{model.field2}" 
+			  	filterMatchMode="contains">
+
+ 
+    
+	
+	<p:inputText type="text" value="#{model.field2}" id="field2"  placeholder="Field2" disabled="false" required="false" styleClass="#{mbPage1.isFieldModified('field2')?'input-modified':''}" title="#{mbPage1.original.field2}">
+	  <p:ajax />
+	</p:inputText>
+			</p:column>	
+	   </p:dataTable>
+	</h:form>
+</ui:composition>
+</html>

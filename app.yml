@@ -1,0 +1,168 @@
+---
+uid: "94189a5b-ac9a-437f-981c-63130e79fb90"
+name: "test-app"
+crtDate: "2022/09/05 09:41:46"
+modDate: "2022/09/05 09:41:46"
+tenant: "noor.hajbi@fs.jo"
+version: 1
+index: 0
+organization: "app-studio"
+status: "Development"
+modules:
+- uid: "e94f9196-0ed2-486c-ab57-ea0fa72dc05c"
+  name: "Module1"
+  crtDate: "2022/09/05 09:41:59"
+  modDate: "2022/09/05 09:41:59"
+  version: 1
+  index: 0
+  groups:
+  - uid: "c016ddd3-ec4f-4817-ade5-7e807671971e"
+    name: "Group 1"
+    crtDate: "2022/09/05 09:42:01"
+    modDate: "2022/09/05 09:42:01"
+    version: 1
+    index: 0
+    views:
+    - uid: "6f359a2a-cfa9-4b46-ad60-4e3a81b9be48"
+      name: "Page1"
+      crtDate: "2022/09/05 09:42:03"
+      modDate: "2022/09/05 09:42:03"
+      version: 1
+      index: 0
+      includeTemplate: false
+      includeForm: true
+      includeActions: true
+      includeTable: true
+      includeBinding: true
+      includeInMenu: true
+      entity:
+        uid: "4fa14f76-99ce-43cf-840e-a79a84eb138c"
+        name: "Page1"
+        crtDate: "2022/09/05 09:42:03"
+        modDate: "2022/09/05 09:42:03"
+        version: 1
+        index: 0
+        maxRecordsCount: 0
+        viewColumnsCount: 4
+        allowDelete: false
+        allowAdd: false
+        allowUpdate: false
+        idField:
+          uid: "837cad0b-a615-44b0-bdd2-0bd936e42009"
+          name: "Id"
+          crtDate: "2022/09/05 09:42:03"
+          modDate: "2022/09/05 09:42:03"
+          version: 1
+          index: 0
+          primary: true
+          visible: true
+          required: false
+          allowUpdate: false
+          enabled: false
+          maxLength: 250
+          width: 0
+          height: 0
+          showInTable: true
+          foriegnKey: false
+          precision: 0
+          scale: 0
+          dataTypeCode: 4
+          keepLastValue: false
+          mainField: false
+          ignore: false
+          minLength: 0
+        fields:
+        - uid: "12ef7cb0-69ab-473c-a04b-8b88d2fa74c8"
+          name: "Field1"
+          crtDate: "2022/09/05 09:42:05"
+          modDate: "2022/09/05 09:42:05"
+          version: 1
+          index: 0
+          primary: false
+          visible: true
+          required: false
+          allowUpdate: false
+          enabled: false
+          maxLength: 250
+          width: 0
+          height: 0
+          showInTable: true
+          foriegnKey: false
+          precision: 0
+          scale: 0
+          dataTypeCode: 12
+          keepLastValue: false
+          mainField: false
+          ignore: false
+          minLength: 0
+        - uid: "7ad3b5a6-07db-4656-b62b-2e0c80235622"
+          name: "Field2"
+          crtDate: "2022/09/05 09:42:07"
+          modDate: "2022/09/05 09:42:07"
+          version: 1
+          index: 1
+          primary: false
+          visible: true
+          required: false
+          allowUpdate: false
+          enabled: false
+          maxLength: 250
+          width: 0
+          height: 0
+          showInTable: true
+          foriegnKey: false
+          precision: 0
+          scale: 0
+          dataTypeCode: 12
+          keepLastValue: false
+          mainField: false
+          ignore: false
+          minLength: 0
+        allowManage: false
+      advanced: false
+      includeView: true
+      includeModel: true
+      includeController: true
+collaborators:
+- uid: "3ff6d13a-be1f-4780-a6c7-2e091d30fd78"
+  crtDate: "2022/09/05 09:41:46"
+  modDate: "2022/09/05 09:41:46"
+  version: 1
+  index: 0
+  email: "mahmoud.alzubi@fs.jo"
+  write: true
+hidden: false
+packageName: "com.app"
+title: "test-app"
+multiModule: false
+repo:
+  url: "https://github.com/NoorHajbi/test-the-app-studio.git"
+  branch: "test"
+  username: "NoorHajbi"
+  password: "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"
+allowPublicAccess: false
+sessionTimeOut: 15
+showPreview: true
+manualPersistence: true
+defaultStackName: "smartcloud-web"
+defaultViewColumnCount: 4
+defaultViewTableRowCount: 20
+defaultManualId: true
+connections:
+- uid: "45f47e28-c9eb-4693-a5bd-6abb4a383e10"
+  crtDate: "2022/09/05 09:42:01"
+  modDate: "2022/09/05 09:42:01"
+  version: 1
+  index: 0
+  empty: true
+theme:
+  mainTitleFont: "test theme"
+  headerBg: "red"
+  headerFg: "yellow"
+connection:
+  uid: "45f47e28-c9eb-4693-a5bd-6abb4a383e10"
+  crtDate: "2022/09/05 09:42:01"
+  modDate: "2022/09/05 09:42:01"
+  version: 1
+  index: 0
+  empty: true
